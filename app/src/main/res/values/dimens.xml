@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headerTextSize">16sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_height">100dp</dimen>
+    <dimen name="margin_top_medium">16dp</dimen>
+    <dimen name="profile_width">100dp</dimen>
+    <dimen name="profile_height">100dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+</resources>

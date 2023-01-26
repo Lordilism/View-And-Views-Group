@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity">
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:text="Back" />
+
+    <ToggleButton
+        android:id="@+id/tb_guest_room_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:textOff="@string/text_off"
+        android:textOn="@string/text_on" />
+
+            <Switch
+                android:id="@+id/swt_night_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tb_guest_room_light"
+                android:layout_alignBottom="@id/tb_guest_room_light"
+                android:layout_centerHorizontal="true"
+                android:checked="true"
+                android:minWidth="56dp"
+                android:text="@string/night_mode" />
+
+            <SeekBar
+                android:id="@+id/sb_sound_volume"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swt_night_mode"
+                android:layout_marginTop="16dp"
+                android:indeterminate="false"
+                android:max="100"
+                tools:progress="21" />
+
+            <TextView
+                android:id="@+id/tvVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swt_night_mode"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/sb_sound_volume"
+                android:text="0 %" />
+
+
+            <RatingBar
+                android:id="@+id/rt_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sb_sound_volume"
+                android:layout_marginTop="8dp"
+                android:numStars="5"
+                tools:rating="3.5" />
+
+            <TextView
+                android:id="@+id/tvRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sb_sound_volume"
+                android:layout_alignTop="@id/rt_star"
+                android:layout_alignBottom="@id/rt_star"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/rt_star"
+                android:paddingStart="16dp"
+                tools:text="4.5" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rt_star"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spCarBrands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress"
+                android:layout_marginStart="16dp"
+                android:entries="@array/carBrands"
+                android:spinnerMode="dropdown" />
+
+            <AutoCompleteTextView
+                android:id="@+id/acCarsSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spCarBrands" />
+
+            <DatePicker
+                android:id="@+id/dp_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acCarsSelection"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:datePickerMode="spinner"
+                android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dp_checkout"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/select_date" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnSelectDate"
+        android:layout_alignBottom="@id/btnSelectDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        tools:text="17/12/1998" />
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSelectDate"
+                android:timePickerMode="clock"
+                android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSelectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelectDate"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/select_time" />
+
+    <TextView
+        android:id="@+id/tvSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnSelectTime"
+        android:layout_alignBottom="@id/btnSelectTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        tools:text="12:00" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelectTime"
+        android:layout_marginStart="12dp"
+        android:text="@string/exercise_1" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnViewGroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnExercise"
+        android:layout_marginStart="12dp"
+        android:text="@string/view_groups" />
+
+
+
+
+
+</RelativeLayout>

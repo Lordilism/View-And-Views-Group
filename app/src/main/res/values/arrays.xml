@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carBrands">
+        <item>"Toyota"</item>
+        <item>"Mitsubishi"</item>
+        <item>"Nissan"</item>
+        <item>"Hino"</item>
+        <item>"Suzuki"</item>
+        <item>"Isuzu"</item>
+        <item>"Volkswagen"</item>
+    </string-array>
+
+    <string-array name="westCarBrands">
+        <item>"Chevrolet"</item>
+        <item>"Jeep"</item>
+        <item>"Ford"</item>
+        <item>"Tesla"</item>
+    </string-array>
+</resources>

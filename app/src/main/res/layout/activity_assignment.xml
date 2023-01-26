@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignmentActivity">
+
+    <ImageView
+        android:id="@+id/ivRandom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        tools:src="@drawable/image1" />
+    <Button
+        android:id="@+id/btRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivRandom"
+        android:text="@string/random"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/cbPortrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btRandom"
+        android:padding="8dp"
+        android:text="@string/portrait" />
+    <CheckBox
+        android:id="@+id/cbLandscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btRandom"
+        android:layout_centerHorizontal="true"
+        android:text="@string/landscape"/>
+
+    <CheckBox
+        android:id="@+id/cbSeascape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btRandom"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:text="@string/seascape" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbLandscape"
+        android:layout_centerHorizontal="true"
+        android:text="@string/done" />
+<RadioGroup
+    android:id="@+id/rb_group"
+    android:layout_below="@id/btnDone"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rbMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:padding="16dp"
+        android:onClick="onRaioButtonClicked"
+        android:text="@string/rb_male"
+        tools:ignore="OnClick" />
+
+    <RadioButton
+        android:id="@+id/rbFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRaioButtonClicked"
+        android:text="@string/rb_female"
+
+        tools:ignore="OnClick" />
+</RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rb_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_next_txt" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Kotlin Basic</string>
+    <string name="hello">Hello World!</string>
+    <string name="greeting">Greeting</string>
+    <string name="type_your_name">Type Your Name</string>
+    <string name="title_activity_assignment">AssignmentActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="random">Random</string>
+    <string name="portrait">Portrait</string>
+    <string name="landscape">Landscape</string>
+    <string name="seascape">Seascape</string>
+    <string name="done">Done</string>
+    <string name="notice">Notice!</string>
+    <string name="rb_male">Male</string>
+    <string name="rb_female">Female</string>
+    <string name="btn_next_txt">Next</string>
+    <string name="text_off">OFF</string>
+    <string name="text_on">ON</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="select_date">select date</string>
+    <string name="select_time">Select time</string>
+    <string name="company_name">Meta</string>
+    <string name="carrier_type">Data Analyst</string>
+    <string name="name">Nicolas</string>
+    <string name="content_description">Upcomming...</string>
+    <string name="exercise_1">Exercise 1</string>
+    <string name="view_groups">View Groups</string>
+</resources>

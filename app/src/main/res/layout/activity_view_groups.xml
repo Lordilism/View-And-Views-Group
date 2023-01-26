@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewGroupsActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/yellow"
+        android:text="Relative" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGreen"
+        android:background="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/btnYellow"
+        android:layout_height="@dimen/button_height"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRed"
+        android:background="@color/red"
+        android:layout_toEndOf="@id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"/>
+    <LinearLayout
+        android:id="@+id/linearV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@id/btnRed">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnYellowLinear"
+            android:background="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="@dimen/button_height"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGreenLinear"
+            android:background="@color/teal_700"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRedLinear"
+            android:background="@color/red"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearV"
+        android:layout_marginTop="@dimen/margin_top_medium">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/profile_width"
+            android:layout_height="@dimen/profile_height"
+            android:src="@drawable/user_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="@dimen/profile_height"
+            android:weightSum="3"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/ivProfile" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="@string/name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/carrier_type"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/company_name"
+                android:textColor="#3E5AF3"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/relativeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="@string/content_description"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@drawable/movies_poster"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@color/black"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_gravity="end|bottom"/>
+
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
